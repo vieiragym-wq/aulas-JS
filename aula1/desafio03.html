@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- CONFIGURAÇÕES DA PÁGINA -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadora matemática simples">
+    <meta name="keywords" content="javascript, calculadora, html">
+    <meta name="author" content="kauan">
+
+    <title>Desafio 3</title>
+
+    <!-- ÍCONE -->
+    <link rel="icon"
+        href="https://i.pinimg.com/736x/d4/e0/bd/d4e0bde674fbb4d88ae339a2febe724b.jpg">
+
+</head>
+
+<body>
+
+    <h1>Calculadora Interativa</h1>
+    <hr>
+
+    <p id="mostrarResultado"></p>
+
+    <script>
+
+        alert("INICIANDO DESAFIO 3");
+
+        let valorA = prompt("Digite o primeiro valor:");
+        let valorB = prompt("Digite o segundo valor:");
+
+        let tipoConta = prompt(
+            "Escolha a operação:\n+\n-\n*\n/"
+        );
+
+        let total;
+
+        if (tipoConta === "+") {
+
+            total = Number(valorA) + Number(valorB);
+
+        } else if (tipoConta === "-") {
+
+            total = Number(valorA) - Number(valorB);
+
+        } else if (tipoConta === "*") {
+
+            total = Number(valorA) * Number(valorB);
+
+        } else if (tipoConta === "/") {
+
+            if (Number(valorB) === 0) {
+
+                total = "Não é possível dividir por zero.";
+
+            } else {
+
+                total = Number(valorA) / Number(valorB);
+
+            }
+
+        } else {
+
+            total = "Operação inválida.";
+        }
+
+        document.getElementById("mostrarResultado").innerHTML =
+            "Resultado final: " + total;
+
+    </script>
+
+</body>
+
+</html>

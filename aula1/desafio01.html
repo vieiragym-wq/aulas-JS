@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="favicon.jpg">
+    <title>Controle de Organização Dos Estudos de JS</title>
+    <meta name="description" content="Pagina Modelo">
+    <meta name="keyword" content="sites,web,desenvolvimento">
+    <meta name="author" content="Kauan">
+</head>
+
+<body>
+     <h1>Ola Mundo em JS: <mark>Alert</mark></h1>
+    <br>
+    <script>
+       window.alert("Seja bem vindo ao meu site");
+        let n1 = window.prompt("Digite o primeiro número:");
+        console.log(n1);
+        let n2 = window.prompt("Digite o segundo número:");
+        console.log(n2);
+        let resposta = window.prompt("Digite a operação desejada: soma ou subtracao");
+        console.log(resposta);
+        if(resposta == "soma"){
+            operacao = 'soma';
+        }else if(resposta == "subtracao"){
+            operacao = 'subtracao';
+        }
+        let resultado;
+        if (operacao === 'soma') {
+            resultado = Number(n1) + Number(n2);
+        } else{ (operacao === 'subtracao') 
+            resultado = Number(n1) - Number(n2);}
+
+        alert('Resultado: ' + resultado);
+
+    </script>
+</body>
+
+</html>

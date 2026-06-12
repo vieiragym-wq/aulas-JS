@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Organização Dos Estudos de JS</title>
+</head>
+<body>
+    <h1> Integrando os recursos de interatividade do JAVASCRIPT </h1>
+        <p id="resultado-tela" style="font-size: 20px; font-weight: bold;"></p>
+
+    <script>
+        window.alert("Seja bem-vindo ao site");
+        let numero = parseFloat(window.prompt("qual é o número que deseja? "))
+        console.log(numero)
+          let numero2 = parseFloat (window.prompt("qual é o segundo número que deseja? "))
+        console.log(numero2)
+          let resposta = window.confirm("deseja somar? ")
+          let resultado = 0
+    
+        if(resposta==true){
+            resultado = (numero + numero2)
+            console.log("o resultado da sua soma é : " +resultado);
+        }
+        else{
+            window.confirm = ("Então vamos subtrair")
+            resultado = (numero - numero2)
+            console.log("O resultado da sua subtração é: " +resultado)
+        
+        }        
+        document.getElementById("resultado-tela").innerText ="O resoltado é " +resultado
+    </script>
+    
+</body>
+</html>

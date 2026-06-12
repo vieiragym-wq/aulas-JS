@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="favicon.jpg">
+    <title>Controle de Organização Dos Estudos de JS</title>
+    <meta name="description" content="Pagina Modelo">
+    <meta name="keyword" content="sites,web,desenvolvimento">
+    <meta name="author" content="Kauan">
+</head>
+
+<body>
+    <h1>Ola Mundo em JS: <mark>Alert</mark></h1>
+    <br>
+    <script>
+        window.alert("Seja bem vindo ao meu site");
+        let nome = window.prompt("Qual é seu nome?");
+        console.log(nome);
+        let resposta = window.confirm("Voce deseja sair da pagina?");
+        console.log(resposta);
+        if(resposta == true){
+        window.console.log("VOCE ESTA PRESTES A SAIR DO SITE!");
+        setTimeout(() => {
+            window.close();
+        }, 3000);
+
+        }else{
+             window.alert("Aproveite meu site, " + nome);
+        }
+
+    </script>
+
+</body>
+
+
+</html>
