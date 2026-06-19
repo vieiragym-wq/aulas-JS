@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon  Tag -->
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <title>AULA 02 - INTRODUÇÃO AO JAVASCRIPT</title>
+    <meta name="description" content="Conteúdo das aulas de JS">
+    <meta name="keywords" content="sites, web, frontend">
+    <meta name="author" content="kauan">
+    <style>
+        p {
+            background-color: antiquewhite;
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><mark> MANIPULANDO ELEMENTOS (TAGS)</mark> DO HTML ATRÁVES DO JS</h1>
+    <hr>
+
+    <div>
+        <p> ESTAMOS APRENDENDO JAVASCRIPT</p>
+        <hr>
+        <p> Aprender é Muito Legal </p>
+        <p> E para ajudar o aprendizado, é PRECISO precisar e exercitar</p>
+
+    </div>
+    <script>
+        const tags_p = document.getElementsByTagName('p')
+        console.log(tags_p);
+
+        let tag_p_1 = tags_p[0];
+        tag_p_1.style.backgroundColor = "blue"
+        tag_p_1.style.color = "white"
+
+        let tag_p_2 = tags_p[1];
+        tag_p_2.style.textAlign = "center";
+        tag_p_2.style.backgroundColor = "purple";
+        tag_p_2.style.color = "white"
+        tag_p_2.style.fontSize = "60pt";
+
+        let tag_p_3 = tags_p[2];
+        tag_p_3.style.backgroundColor = "yellow";
+        tag_p_3.style.color = "black";
+        tag_p_3.style.fontSize = "25pt";
+        tag_p_3.style.textAlign = "right";
+
+
+
+    </script>
+
+
+</body>
+
+</html>
+
+</body>
+
+</html>

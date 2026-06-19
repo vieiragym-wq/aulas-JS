@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse é uma pagina modelo">
+    <meta name="keywords" content="sites,web desenvolvimento backend">
+    <meta name="author" content="Kauan vieira">
+    <title>desafio03</title>
+
+    <link rel="icon" href="https://i.pinimg.com/736x/d4/e0/bd/d4e0bde674fbb4d88ae339a2febe724b.jpg" type="image/x-icon">
+
+</head>
+
+<body>
+    <h1><mark> ELEMENTOS (TAGS)</mark>DO HTML ATRAVÉS DO JAVASCRIPT </h1>
+    <div>
+        <p>Estamos aprendendo javascript</p>
+
+        <p> Aprender é muiro legal!!</p>
+
+        <p> E para ajudar o aprendizado, é PRECISO praticar e exercitar </p>
+
+    </div>
+
+    <form>
+        <label for="name"> Qual seu nome?</label>
+        <input type="text" id="name" name="name" placeholder="Digite seu nome">
+        <br>
+        <label for="email"> Qual seu email?</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email">
+        <br>
+        <label for="senha"> Qual sua senha?</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+        <br>
+        <button type="button" onclick="alert('Botão clicado!')">Clique aqui</button>
+
+    </form>
+    <img src="img/ISAGI YOICHI.jpg" alt="imagem de teste" title="Logo1">  
+    <button onclick="trocar_img()">TROCAR IMAGEM</button>
+    
+    <script>
+        const tags_p = document.getElementsByTagName('p')
+        console.log(tags_p);
+        let tag_p_1 = tags_p[0];
+
+        tag_p_1.style.backgroundColor = "blue";
+        tag_p_1.style.color = "white";
+        tag_p_1.style.textAlign = "center";
+        tag_p_1.style.fontSize = "30px"
+
+
+        let tag_p_2 = tags_p[1];
+        console.log(tag_p_2);
+        tag_p_2.style.backgroundColor = "grey";
+        tag_p_2.style.color = "white";
+        tag_p_2.style.textAlign = "center";
+        tag_p_2.style.fontSize = "50px"
+
+
+        let tag_p_3 = tags_p[2];
+        console.log(tags_p);
+        tag_p_3.style.backgroundColor = "blue";
+        tag_p_3.style.color = "white";
+        tag_p_3.style.textAlign = "center";
+
+
+        tag_p_3.innerHTML = "ALTEREI O CONTEÚDO";
+        tag_p_2.innerText = "MUDEI"
+        const tag_body = document.getElementsByTagName('body');
+        console.log(tag_body);
+        tag_body[0].style.backgroundColor = "gray";
+
+        tag_body[0].style.border = "10px solid black";
+
+        const tag_div = document.getElementsByTagName('div');
+        console.log(tag_div);
+        tag_div[0].style.backgroundColor = "red";
+
+        const tag_h1 = document.getElementsByTagName('h1');
+        console.log(tag_h1);
+        tag_h1[0].style.color = "white";
+        tag_h1[0].style.textAlign = "center";
+
+        const tag_form = document.getElementsByTagName('form');
+        console.log(tag_form);
+        tag_form[0].style.backgroundColor = "lightgray";
+        tag_form[0].style.padding = "20px";
+        tag_form[0].style.borderRadius = "10px";
+        tag_form[0].style.width = "300px";
+        tag_form[0].style.margin = "20px auto";
+        tag_form[0].style.border = "2px solid black";
+        const tag_button = document.getElementsByTagName('button');
+        console.log(tag_button);
+        tag_button[0].style.backgroundColor = "blue";
+        tag_button[0].style.color = "white";
+        tag_button[0].style.padding = "10px 20px";
+        tag_button[0].style.border = "none";
+        tag_button[0].style.borderRadius = "5px";
+        tag_button[0].style.cursor = "pointer";
+        tag_button[0].style.textAlign = "center";
+
+        const tag_img = document.getElementsByTagName('img');
+        console.log(tag_img);
+        tag_img[0].style.width = "600px";
+        tag_img[0].style.height = "500px";
+        tag_img[0].style.display = "flex";
+        tag_img[0].style.margin = "20px auto";
+        tag_img[0].style.border = "5px solid black";
+
+        function trocar_img() {
+                tag_img[0].src = "img/img2.jpg";
+                tag_img[0].title="Logo2"
+    
+        }
+        
+    </script>
+</body>
+
+</html>

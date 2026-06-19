@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio01</title>
+</head>
+<body>
+    <h1><mark>INTERAÇÃO JS COM FORMS</mark> DO HTML</h1>
+    <hr>
+    <input type="button" onclick="triste();" value="FELIZ">
+    <input type="button" onclick="feliz();" value="TRISTE">
+    <img src="img/triste.jpg" id="rosto" style="width: 350px;">
+    <script >
+        function triste(){
+            var tag_img = document.getElementsByTagName('img')[0]
+            console.log(tag_img)
+            tag_img.src="img/feliz.png";
+        }
+
+        function feliz(){
+            var tag_img = document.getElementsByTagName('img')[0]
+            console.log(tag_img)
+            tag_img.src="img/triste.jpg";
+
+        }
+
+    </script>
+ 
+</body>
+</html>
